@@ -84,7 +84,7 @@ Clog.prototype.log = function() {
 
   var argsArray = [
           '%c[' + this.prefix + this.extension + Clog.getCallerLine(this) + ']',
-          'font-weight: bold; text-transform: uppercase; color: ' + this.color
+          'text-transform: uppercase; color: ' + this.color
         ];
   Array.prototype.push.apply(argsArray, arguments);
   argsArray.push('[+' + (Date.now() - this.startTime) + 'ms]');
@@ -118,8 +118,8 @@ Clog.prototype.err = function() {
 
   var argsArray = [
           '%c[' + this.prefix + this.extension + Clog.getCallerLine(this) + '] %cERROR',
-          'font-weight: bold; text-transform: uppercase; color: ' + this.color,
-          'font-weight: bold; text-transform: uppercase; color: red'
+          'text-transform: uppercase; color: ' + this.color,
+          'text-transform: uppercase; color: red'
         ];
   Array.prototype.push.apply(argsArray, arguments);
   argsArray.push('[+' + (Date.now() - this.startTime) + 'ms]');

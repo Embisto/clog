@@ -18,3 +18,27 @@ h2 {
   	margin: 0;
   	font-weight:100;
 }
+.btn {
+  background: #1ECD97;
+  color: black;
+  border: none;
+  margin: 50px;
+  padding: 15px 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background: #19AC7F;
+}
+.btn:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
